@@ -1,0 +1,30 @@
+
+
+<script>
+
+
+    let notaMate = parseFloat(prompt('Nota da materia de Matematica.')); //
+    let notaPort = parseFloat(prompt('Nota da materia de Portugues.'));  // Prompt para 
+    let notaCien = parseFloat(prompt('Nota da materia de Ciencias.'));   //
+
+    let notaSoma = notaMate + notaPort + notaCien // Soma de valor das materias
+    let notaFinal = notaSoma / 3 //divisão para calculo de media
+
+    document.write("<h2>Calculo da media nota escolar " + "<br><h3> Aprovado a partir de 6,0" + "</h2></h3>");
+    document.write("<h3>Matematica: " + notaMate + "</h3>");
+    document.write("<h3>Portugues: " + notaPort + "</h3>");
+    document.write("<h3>Ciencias: " + notaCien + "</h3>");
+    document.write("<h3>Media final: " + notaFinal + "</h3>");
+
+
+
+    if (notafinal <= 6) {
+        document.write("<h3>Resultado: Reprovado</h3>");
+    } else {
+        document.write("<h3>Resultado: Aprovado</h3>");
+    }
+
+
+</script>
+<br>
+<button><a href="index.html"> retornar para site anterior</a></button>

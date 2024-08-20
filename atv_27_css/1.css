@@ -1,0 +1,12 @@
+#relogio1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#display1 {
+    padding: 8px;
+}

@@ -1,0 +1,66 @@
+<style>
+    #mod {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+
+    body {
+        background-color: black;
+    }
+</style>
+
+<center>
+
+    <body>
+
+
+        <script>
+            function acao() {
+                let div = document.getElementById('box');
+                div.style.width = '500px';
+                div.style.height = '500px';
+                div.style.backgroundColor = 'red';
+            }
+        </script>
+
+        <script>
+            function acao2() {
+                let div = document.getElementById('box');
+                div.style.width = '500px';
+                div.style.height = '500px';
+                div.style.backgroundColor = 'blue';
+            }
+        </script>
+
+        <script>
+            function acao3() {
+                let div = document.getElementById('box');
+                div.style.width = '500px';
+                div.style.height = '500px';
+                div.style.backgroundColor = 'yellow';
+            }
+        </script>
+
+        <script>
+            function acao4() {
+                let div = document.getElementById('box');
+                div.style.width = '500px';
+                div.style.height = '500px';
+                div.style.backgroundColor = 'grey';
+            }
+        </script>
+
+        <div id="mod">
+            <div id="box"></div>
+            <button onclick="acao();">Clique para alterar (vermelho)</button><br>
+            <div id="box" "><button ondblclick=" acao2();">Clique 2 Vezes para alterar (Azul)</button><br>
+                <button onmouseup="acao3();">Solte o clique para alterar (Amarelo)</button><br>
+                <button onmouseover="acao4();">Passar o Mouse para alterar (Cinza)</button>
+            </div>
+
+
+</center>
+</body>
+
+<br><br>
+<button><a href="index.html"> retornar para site anterior</a></button>

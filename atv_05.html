@@ -1,0 +1,23 @@
+
+
+<script>
+
+
+    let nomUsue = prompt('Nome do Funcionario');
+    let valorSal = parseFloat(prompt('Salario mensal'));
+    let porcen = parseFloat(prompt('Porcentagem'));
+
+    let calcPorc = porcen / 100
+    let aum = valorSal * calcPorc
+    let calcFinal = valorSal + aum
+
+    document.write("<h2>Calculo de aumento salarial</h2>");
+    document.write("Nome Funcionario: " + nomUsue);
+    document.write("<h3>Valor anterior: " + valorSal + "</h3>");
+    document.write("<h3>Porcentagem de calculo: " + porcen + "%" + "</h3>");
+    document.write("<h3>valor de reajuste " + aum + "</h3>");
+    document.write("<h3>Calculo final do salario:" + calcFinal + "</h3>");
+
+</script>
+<br>
+<button><a href="index.html"> retornar para site anterior</a></button>

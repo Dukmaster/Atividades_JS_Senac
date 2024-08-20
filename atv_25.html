@@ -1,0 +1,32 @@
+
+<p>Precione Enter</p>
+<script>
+    document.onkeydown = function (event) {
+        if (event.key === "Enter") {
+            document.write("voce pressionou enter");
+        }
+    };
+</script>
+<hr><br>
+
+<p>Precione (F) por um tempo e solte para ação</p>
+
+<script>
+    document.onkeyup = function (event) {
+        if(event.key === "space") {
+            document.write("voce soltou a tecla (espaço))");
+        }
+    };
+</script>
+<br><hr>
+
+<p>Precione qualquer outra tecla e acione o 1 evento</p>
+
+<script>
+    document.onkeypress = function (event) {
+        document.write("voce digitou a letra: " + event.key);
+    };
+    // event.key para determinar um digito de tecla
+</script>
+<br><br>
+<button><a href="index.html"> retornar para site anterior</a></button>

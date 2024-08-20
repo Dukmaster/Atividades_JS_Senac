@@ -1,0 +1,51 @@
+<style>
+    h1 {
+        background-color: coral;
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 200%;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+
+<script>
+
+    let data = new Date();
+    let dia = data.getDate();
+    let diasemana = data.getDay();
+    let mescompleto = data.getMonth() + 1;
+    let ano = data.getFullYear();
+
+    let ds;
+    if (diasemana === 0) { ds = 'Domingo' }
+    else if (diasemana === 1) { ds = 'Segunda-Feira' }
+    else if (diasemana === 2) { ds = 'Terça-Feira' }
+    else if (diasemana === 3) { ds = 'Quarta-Feira' }
+    else if (diasemana === 4) { ds = 'Quinta-Feira' }
+    else if (diasemana === 5) { ds = 'Sexta-Feira' }
+    else if (diasemana === 6) { ds = 'Sabado' }
+
+    let mes;
+    if (mescompleto === 1) { mes = 'Janeiro' }
+    else if (mescompleto === 2) { mes = 'Fevereiro' }
+    else if (mescompleto === 3) { mes = 'Março' }
+    else if (mescompleto === 4) { mes = 'Abril' }
+    else if (mescompleto === 5) { mes = 'Maio' }
+    else if (mescompleto === 6) { mes = 'Junho' }
+    else if (mescompleto === 7) { mes = 'Julho' }
+    else if (mescompleto === 8) { mes = 'Agosto' }
+    else if (mescompleto === 9) { mes = 'Setembro' }
+    else if (mescompleto === 10) { mes = 'Outubro' }
+    else if (mescompleto === 11) { mes = 'Novembro' }
+    else if (mescompleto === 0) { mes = 'Dezembro' }
+
+
+    let datacompleta = ds + ' ' + dia + ' de ' + mes + ' de ' + ano;
+
+    console.log(datacompleta);
+    document.write('<h1>' + datacompleta + '</h1>');
+
+</script>
+<br><br>
+<button><a href="index.html"> retornar para site anterior</a></button>

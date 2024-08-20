@@ -1,0 +1,65 @@
+body {
+    background-color: #fff9ef;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; /* Define o layout flexbox */
+    justify-content: center; /* Centraliza as caixas horizontalmente */
+    gap: 20px; /* Espaçamento entre as caixas */
+    padding: 20px;
+    height: 100vh; /* Garante que o contêiner ocupe toda a altura da viewport */
+    box-sizing: border-box;
+}
+
+#corpo, #corpo2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    width:400px; /* Largura das caixas */
+    height: 440px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#barras input, #barras2 input {
+    width: 100%; /* Mantém a largura dos inputs em 100% da largura da div pai */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+

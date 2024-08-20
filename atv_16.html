@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #font {
+            font-size: 36px;
+            color: darkorange;
+            background-color: grey;
+            text-align: justify;
+        }
+    </style>
+
+    <script>
+
+        function questionario() {
+
+            let nome = prompt('Digite seu nome');
+            let email = prompt('Digite seu E-mail');
+            let tel = prompt('Digite seu telefone + DDD');
+
+
+            document.write('<h1>Nome: ' + nome + '</h1>');
+            document.write('<h1>E-mail: ' + email + '</h1>');
+            document.write('<h1>Tel.: ' + tel + '</h1>');
+        }
+
+        questionario();
+
+    </script>
+    <br><br>
+    <button><a href="index.html"> retornar para site anterior</a></button>
+
+</body>
+
+</html>

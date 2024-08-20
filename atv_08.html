@@ -1,0 +1,42 @@
+
+<script>
+    
+    let valor1 = parseFloat(prompt('digite Primeiro valor.')); //
+    let valor2 = parseFloat(prompt('digite Segundo valor.')); //
+    let sinalCalc = prompt('Coloque o sinal matematico');
+
+
+    switch (sinalCalc) {
+
+        case '+':
+            document.write('<h1> Voce escolheu soma:  </h1>');
+            document.write(valor1 + sinalCalc + valor2 + ' = ');
+            document.write(valor1 + valor2);
+
+            break;
+
+        case '-':
+            document.write('<h1> Voce escolheu subtraçao:  </h1>');
+            document.write(valor1 + sinalCalc + valor2 + ' = ');
+            document.write(valor1 - valor2);
+            break;
+
+        case '*':
+        case 'x':
+        case 'X':
+            document.write('<h1> Voce escolheu Multiplicaçao:  </h1>');
+            document.write(valor1 + sinalCalc + valor2 + ' = ');
+            document.write(valor1 * valor2);
+            break;
+
+        case '/':
+            document.write('<h1> Voce escolheu soma:  </h1>');
+            document.write(valor1 + sinalCalc + valor2 + ' = ');
+            document.write(valor1 / valor2);
+            break;
+    }
+
+
+</script>
+<br><br>
+<button><a href="index.html"> retornar para site anterior</a></button>

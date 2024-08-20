@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f8ff; /* Cor de fundo suave */
+            margin: 0;
+        }
+ 
+        #result {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+ 
+        .names-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+ 
+        .fruit-name {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+        }
+ 
+        #fruitImage img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+ 
+    <div id="result">
+        <div class="names-container">
+            <div id="fruitNamePt" class="fruit-name"></div>
+            <div id="fruitNameEn" class="fruit-name"></div>
+        </div>
+        <div id="fruitImage"></div>
+    </div>
+ 
+    <script>
+        const fruits = {
+            'maçã': {
+                name: 'Apple',
+                image: 'imagens/frutas/maca.jpg'
+            },
+            'banana': {
+                name: 'Banana',
+                image: 'imagens/frutas/banana.jpg'
+            },
+            'caixa': {
+                name: 'Box Fruit', // Nome genérico para "caixa"
+                image: 'imagens/frutas/caixa.jpg'
+            },
+            'caqui': {
+                name: 'Persimmon',
+                image: 'imagens/frutas/caqui.jpg'
+            },
+            'coco': {
+                name: 'Coconut',
+                image: 'imagens/frutas/coco.jpg'
+            },
+            'mamão': {
+                name: 'Papaya',
+                image: 'imagens/frutas/mamao.jpg'
+            },
+            'manga': {
+                name: 'Mango',
+                image: 'imagens/frutas/manga.jpg'
+            },
+            'melancia': {
+                name: 'Watermelon',
+                image: 'imagens/frutas/melancia.jpg'
+            },
+            'melão': {
+                name: 'Melon',
+                image: 'imagens/frutas/melao.jpg'
+            },
+            'morango': {
+                name: 'Strawberry',
+                image: 'imagens/frutas/morango.png'
+            },
+            'pera': {
+                name: 'Pear',
+                image: 'imagens/frutas/pera.jpg'
+            },
+            'tangerina': {
+                name: 'Mandarin',
+                image: 'imagens/frutas/tangerina.jpg'
+            },
+        };
+ 
+        function showFruit() {
+            const fruitInput = prompt('Digite o nome da fruta:').toLowerCase();
+            const fruitNamePtDiv = document.getElementById('fruitNamePt');
+            const fruitNameEnDiv = document.getElementById('fruitNameEn');
+            const fruitImageDiv = document.getElementById('fruitImage');
+ 
+            if (fruits[fruitInput]) {
+                fruitNamePtDiv.innerText = fruitInput.charAt(0).toUpperCase() + fruitInput.slice(1);
+                fruitNameEnDiv.innerText = fruits[fruitInput].name;
+                fruitImageDiv.innerHTML = `<img src="${fruits[fruitInput].image}" alt="${fruitInput}">`;
+            } else {
+                fruitNamePtDiv.innerText = 'Não encontrada';
+                fruitNameEnDiv.innerText = '';
+                fruitImageDiv.innerHTML = '';
+            }
+        }
+ 
+        // Chama a função quando a página é carregada
+        window.onload = showFruit;
+    </script>
+</body>
+</html>
+
+<br><br>
+<button><a href="index.html"> retornar para site anterior</a></button>
